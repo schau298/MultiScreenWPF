@@ -1,0 +1,23 @@
+﻿<Page x:Class="MultiScreenWPF.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MultiScreenWPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2">
+    <Page.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FF0ADFFA" Offset="1"/>
+        </LinearGradientBrush>
+    </Page.Background>
+
+    <Grid>
+        <Label Content="Page 2" HorizontalAlignment="Left" Height="113" Margin="296,112,0,0" VerticalAlignment="Top" Width="258" Foreground="#FFF6F6F6" FontSize="52" FontWeight="Bold"/>
+        <Button x:Name="button_next" Content="next" HorizontalAlignment="Left" Height="86" Margin="445,284,0,0" VerticalAlignment="Top" Width="217" FontSize="22" FontWeight="Bold" Click="button_next_Click"/>
+        <Button x:Name="button_Copy" Content="prev" HorizontalAlignment="Left" Height="86" Margin="122,284,0,0" VerticalAlignment="Top" Width="217" FontSize="22" FontWeight="Bold" Click="prev_Click"/>
+
+    </Grid>
+</Page>
